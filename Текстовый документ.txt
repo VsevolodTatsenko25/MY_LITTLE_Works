@@ -1,0 +1,70 @@
+# 1. Факториал
+n = int(input("Введите натуральное число:"))
+f = 1
+for i in range (2,n+1):
+    f = f*i
+print("Факториал числа ",n,"равен = ",f)
+
+
+
+
+# 2.
+n = (input("Введите челое неотрицательно число:"))
+print("Количество цифр в числе = ",len(n))
+
+
+
+
+
+#3.
+horse = 21
+bull = 31
+bank = 1770
+counter_bull = 0
+counter_horse = 0
+while bank > 0:
+    bank -= bull
+    counter_bull+=1
+    bank -= horse
+    counter_horse+=1
+print("Купил лошадей: ",counter_horse)
+print("Купил быков:",counter_bull)
+
+
+
+
+#6
+n = int(input("Введите число: "))
+if n > 0:
+    print("True")
+else:
+    print("False")
+
+
+
+
+
+
+#8
+
+k = int(input())
+counter = 0
+while k > 99 and k <= 999:
+    k = int(input())
+    st1 = k // 100
+    st2 = k % 100 // 10
+    st3 = k % 10
+    summ = st1 + st2 + st3
+    if 1 < summ < 27:
+        print("Число",k,"подходит условию!")
+        counter += 1
+    else:
+        print("Число",k,"Не подходит условию!")
+print("Количество трехзначных цифр подходящих условию равно = ",counter)
+
+
+
+
+
+
+
